@@ -1,0 +1,115 @@
+.navbar{
+    background-color: #211F20 !important;
+}
+
+.nav-link{
+    font-size: 1.3rem
+}
+
+.dropdown-menu{
+    background-color: #211F20 !important;
+}
+
+.dropdown-menu .dropdown-item{
+    color:white;
+}
+.dropdown-menu .dropdown-item:hover{
+    color:#F78225 !important;
+    background: none;
+}
+
+.bg-dark{
+    background-color: #211F20 !important;
+}
+
+.nav-link:hover{
+    color:#F78225 !important;
+}
+
+.btn{
+    background-color:#00ACE8 !important;
+} 
+
+.colorText{
+    color:#00ACE8;
+}
+
+.colorText:hover{
+    color:#F78225;
+}
+
+.dt{
+  width: 6rem;
+  float: left;
+  word-wrap: break-word;
+}
+
+.itemside {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.itemside .text-wrap {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.text-muted {
+  color: #6c757d !important;
+}
+.small .small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+.icon-user{
+  font-size: 2.0rem !important;
+}
+ .icon-shopping{
+  font-size: 2.0rem !important;
+}
+/*
+.animation-logo{
+  animation: desplazar 3s infinite linear;
+}*/
+
+.btn-outline-danger{
+  background-color: white !important;
+}
+.btn-outline-success{
+  background-color: white !important;
+  margin-right: 0.4rem;
+}
+ .btn-block{
+  background-color: white !important;
+}
+
+.btn-outline-danger:hover{
+  color: #dc3545;
+}
+
+.btn-outline-success:hover{
+  color: #28a745;
+}
+
+ .fa-cc-mastercard{
+  font-size: 2.6rem !important;
+}
+ .fa-cc-visa{
+  font-size: 2.6rem !important;
+}
+
+
+/*
+@keyframes desplazar{
+  from{
+
+    transform: translateX(0px);
+
+  }
+  to{
+    transform: translateX(500px); 
+  }
+}*/
