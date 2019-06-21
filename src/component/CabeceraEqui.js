@@ -7,7 +7,7 @@ class CabeceraEqui extends Component {
   constructor(props) {
     super();
     this.state = {
-      cabeceraequi: props.noticias
+      cabeceraequi: props.cabeceraEqui
     }
   }
 

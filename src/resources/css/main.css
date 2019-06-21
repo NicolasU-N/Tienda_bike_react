@@ -3,15 +3,16 @@
 }
 
 .nav-link{
-    font-size: 1.3rem
+    font-size: 1.3rem;
+    color: white;
 }
 
 .dropdown-menu{
     background-color: #211F20 !important;
 }
 
-.dropdown-menu .dropdown-item{
-    color:white;
+.dropdown-item{
+    color:white !important;
 }
 .dropdown-menu .dropdown-item:hover{
     color:#F78225 !important;

@@ -50,8 +50,8 @@ class Nav extends Component {
                       Productos
                     </a>
                     <div className="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
-                      <a className="dropdown-item" href="repuestos.html">Repuestos</a>
-                      <a className="dropdown-item" href="equipamiento.html">Equipamiento</a>
+                      <a className="dropdown-item" onClick={()=> this.onClick('/Repuestos')}>Repuestos</a>
+                      <a className="dropdown-item" onClick={()=> this.onClick('/Equipamiento')}>Equipamiento</a>
                     </div>
                   </div>
                   

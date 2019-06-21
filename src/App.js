@@ -5,7 +5,8 @@ import './resources/css/style.css';
 import Index from './views/Index';
 import Bicicletas from './views/Bicicletas';
 import Carrito from './views/Carrito';
-
+import Equipamiento from './views/Equipamiento';
+import Repuestos from './views/Repuestos';
 
 class App extends Component  {
   render(){
@@ -15,6 +16,8 @@ class App extends Component  {
             <Route exact path='/' component={Index}/>
             <Route exact path='/Bicicletas' component={Bicicletas}/>
             <Route exact path='/Carrito' component={Carrito}/>
+            <Route exact path='/Equipamiento' component={Equipamiento}/>
+            <Route exact path='/Repuestos' component={Repuestos}/>
           </Switch>
       </Router>
 
