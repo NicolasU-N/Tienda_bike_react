@@ -9,7 +9,7 @@ class Footer extends Component {
 
     render() {
         return (
-            <div className="position-static fixed-bottom">
+            <div className="position-sticky ">
                 <footer className="bg-dark py-5">
                 <div className="container">
                     <div className="row">

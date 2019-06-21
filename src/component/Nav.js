@@ -32,7 +32,7 @@ class Nav extends Component {
         return( 
             
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top position-sticky text-center">
-              <a className="navbar-brand" onClick={()=> this.onClick('/')}>
+              <a className="navbar-brand cursor" onClick={()=> this.onClick('/')}>
               <img className='animation-logo' src={Logo} /> </a>
               
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -42,27 +42,27 @@ class Nav extends Component {
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item active">
-                    <a className="nav-link" onClick={()=> this.onClick('/Bicicletas')}>Bicicletas <span className="sr-only">(current)</span></a>
+                    <a className="nav-link cursor" onClick={()=> this.onClick('/Bicicletas')}>Bicicletas <span className="sr-only">(current)</span></a>
                   </li>
                   <div className="dropdown">
-                    <a className="nav-link active dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                    <a className="nav-link active dropdown-toggle cursor" role="button" id="dropdownMenuLink" data-toggle="dropdown"
                       aria-haspopup="true" aria-expanded="false">
                       Productos
                     </a>
                     <div className="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
-                      <a className="dropdown-item" onClick={()=> this.onClick('/Repuestos')}>Repuestos</a>
-                      <a className="dropdown-item" onClick={()=> this.onClick('/Equipamiento')}>Equipamiento</a>
+                      <a className="dropdown-item cursor" onClick={()=> this.onClick('/Repuestos')}>Repuestos</a>
+                      <a className="dropdown-item cursor" onClick={()=> this.onClick('/Equipamiento')}>Equipamiento</a>
                     </div>
                   </div>
                   
                   
                   <li className="nav-item active">
-                    <a className="nav-link" href="login.html"> <i className="icon icon-user">
+                    <a className="nav-link cursor" onClick={()=> this.onClick('/Login')}> <i className="icon icon-user">
                       </i></a>
                   </li>
           
                   <li className="nav-item active">
-                    <a className="nav-link" onClick={()=> this.onClick('/Carrito')}> <i className="icon icon-shopping">
+                    <a className="nav-link cursor" onClick={()=> this.onClick('/Carrito')}> <i className="icon icon-shopping">
                       </i></a>
                   </li>
                 </ul>

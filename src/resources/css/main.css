@@ -2,6 +2,10 @@
     background-color: #211F20 !important;
 }
 
+.cursor{
+  cursor: pointer;
+}
+
 .nav-link{
     font-size: 1.3rem;
     color: white;
@@ -101,6 +105,16 @@
  .fa-cc-visa{
   font-size: 2.6rem !important;
 }
+
+#enviar{
+  background-color:#00ACE8 !important;
+  
+}
+
+.checked{
+  color:orange;
+}
+
 
 
 /*

@@ -3,13 +3,13 @@ import '../resources/css/main.css'
 import '../resources/css/style.css'
 import Nav from '../component/Nav'
 import Footer from '../component/Footer';
-import Login from '../component/Login';
+import Registrar from '../component/Registrar';
 
 function App() {
     return (
         <div>
             <Nav />
-            <Login />
+            <Registrar />
             <Footer />
         </div>
     )

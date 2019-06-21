@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import {Redirect} from 'react-router-dom'
 import '../resources/css/main.css'
 import '../resources/css/style.css'
 
@@ -7,18 +7,32 @@ import Venzo from '../resources/img/Bicicletas/Venzo.jpg'
 import Ruta from '../resources/img/Bicicletas/Ruta.jpg'
 import onTrail from '../resources/img/Bicicletas/onTrail.jpg'
 
-
-
 class Bicicletas extends Component {
 
   constructor(props) {
     super();
     this.state = {
-      bicicletas: props.bicicletas
+      bicicletas: props.bicicletas,
+      redirect: undefined  
+    }
+    this.onClick = this.onClick.bind(this)
+  }
+
+  async onClick(url){
+    const pathname = window.location.pathname
+    if(url!== pathname){
+      this.setState({
+        redirect:url
+      })
     }
   }
 
   render() {
+    if(this.state.redirect){
+      return(
+        <Redirect to={this.state.redirect}/>
+      )
+    }
     return (
       <div className="text-center my-5 container">
 
@@ -27,7 +41,7 @@ class Bicicletas extends Component {
             <div className="card card-cascade wider card-ecommerce">
 
               <div className="view view-cascade overlay">
-                <a href="#"><img src={Venzo} className="card-img-top" alt="sample photo" /></a>
+                <a onClick={()=> this.onClick('/Detail')}><img src={Venzo} className="card-img-top" alt="sample photo" /></a>
                 <a>
                   <div className="mask rgba-white-slight"></div>
                 </a>
@@ -62,7 +76,7 @@ class Bicicletas extends Component {
             <div className="card card-cascade wider card-ecommerce">
 
               <div className="view view-cascade overlay">
-                <a href="#"><img src={Ruta} className="card-img-top" alt="sample photo" /></a>
+                <a href="#" onClick={()=> this.onClick('/Detail')}><img src={Ruta} className="card-img-top" alt="sample photo" /></a>
 
                 <a>
                   <div className="mask rgba-white-slight"></div>
@@ -102,7 +116,7 @@ class Bicicletas extends Component {
           <div className="col-lg-4 col-md-6">
             <div className="card card-cascade wider card-ecommerce">
               <div className="view view-cascade overlay">
-                <a href="#"><img src={onTrail} className="card-img-top" alt="sample photo" /></a>
+                <a href="#" onClick={()=> this.onClick('/Detail')} ><img src={onTrail} className="card-img-top" alt="sample photo" /></a>
                 <a>
                   <div className="mask rgba-white-slight"></div>
                 </a>

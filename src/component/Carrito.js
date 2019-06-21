@@ -55,7 +55,7 @@ class Carrito extends Component {
                         </figure>
                       </td>
                       <td>
-                        <input type="number" name="quantity" min="1" max="100" />
+                        <input type="number" name="quantity" min="1" max="100" placeholder="Cantidad"/>
 
                       </td>
                       <td>
@@ -90,7 +90,7 @@ class Carrito extends Component {
                         </figure>
                       </td>
                       <td>
-                        <input type="number" name="quantity" min="1" max="100"  />
+                        <input type="number" name="quantity" min="1" max="100"  placeholder="Cantidad"/>
                       </td>
                       <td>
                         <div className="price-wrap">
@@ -124,7 +124,7 @@ class Carrito extends Component {
                         </figure>
                       </td>
                       <td>
-                        <input type="number" name="quantity" min="1" max="100"  />
+                        <input type="number" name="quantity" min="1" max="100" placeholder="Cantidad" />
                       </td>
                       <td>
                         <div className="price-wrap">

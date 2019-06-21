@@ -3,9 +3,6 @@ import {Redirect} from 'react-router-dom'
 import '../resources/css/main.css'
 import '../resources/css/style.css'
 
-
-
-
 class Login extends Component {
 
   constructor(props) {
@@ -49,7 +46,7 @@ class Login extends Component {
                 <label class="custom-control-label" for="defaultLoginFormRemember">Recuerdame</label>
               </div>
             </div>
-            <div>onClick={()=> this.onClick('/')}
+            <div>
               <a href="#">¿Olvidaste la contraseña?</a>
             </div>
           </div>
@@ -58,7 +55,7 @@ class Login extends Component {
 
           <div class="text-center">
             <p>¿No tienes cuenta?
-          <a href="registrar.html">Registrate</a>
+          <a href="#" onClick={()=> this.onClick('/Registrar')}>Registrate</a>
             </p>
 
             <p>O accede con:</p>

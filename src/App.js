@@ -7,6 +7,9 @@ import Bicicletas from './views/Bicicletas';
 import Carrito from './views/Carrito';
 import Equipamiento from './views/Equipamiento';
 import Repuestos from './views/Repuestos';
+import Login from './views/Login';
+import Registrar from './views/Registrar';
+import Detail from './views/Detail';
 
 class App extends Component  {
   render(){
@@ -18,6 +21,9 @@ class App extends Component  {
             <Route exact path='/Carrito' component={Carrito}/>
             <Route exact path='/Equipamiento' component={Equipamiento}/>
             <Route exact path='/Repuestos' component={Repuestos}/>
+            <Route exact path='/Login' component={Login}/>
+            <Route exact path='/Registrar' component={Registrar}/>
+            <Route exact path='/Detail' component={Detail}/>
           </Switch>
       </Router>
 

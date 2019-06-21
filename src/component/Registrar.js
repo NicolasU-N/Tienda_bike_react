@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import '../resources/css/main.css'
 import '../resources/css/style.css'
 
-class Login extends Component {
+class Registrar extends Component {
 
   constructor(props) {
     super();
     this.state = {
-      login: props.login
+      registrar: props.registrar
     }
   }
 
@@ -35,7 +35,7 @@ class Login extends Component {
 
           <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">Opcional</small>
 
-          <button class="btn btn-info my-4 btn-block" type="submit">Registrar</button>
+          <button class="btn btn-info my-4 btn-block" id="enviar" type="submit">Registrar</button>
 
           <div class="text-center">
             <p>Registrar con:</p>
@@ -60,4 +60,4 @@ class Login extends Component {
   }
 }
 
-export default Login
+export default Registrar

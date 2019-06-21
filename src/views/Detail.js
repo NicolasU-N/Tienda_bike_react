@@ -1,15 +1,17 @@
 import React from 'react';
+import Nav from '../component/Nav'
+
+import Footer from '../component/Footer';
+
 import '../resources/css/main.css'
 import '../resources/css/style.css'
-import Nav from '../component/Nav'
-import Footer from '../component/Footer';
-import Login from '../component/Login';
+import Detail from '../component/Detail';
 
 function App() {
     return (
         <div>
             <Nav />
-            <Login />
+            <Detail />
             <Footer />
         </div>
     )
